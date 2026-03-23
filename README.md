@@ -1,5 +1,7 @@
 # E-Commerce Sales Analysis
 
+![Top-Performing-Products](/figures/Top_Performing_Products.png){: .align-center}
+
 **[Click here to view the Business Analysis Report](https://gabepoissant.github.io/UCI-ecommerce-analysis/)** 
 
 ## Project Overview
