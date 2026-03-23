@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>02_business_analysis</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7510,6 +7510,17 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4b8dc21d">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong><a href="https://gabepoissant.github.io/projects/ecommerce-analysis/">Back to Portfolio</a></strong></p>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=46e3a66e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7547,7 +7558,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
@@ -7581,7 +7592,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'../data/processed/cleaned_transactions.csv'</span><span class="p">,</span> <span class="n">parse_dates</span><span class="o">=</span><span class="p">[</span><span class="s1">'InvoiceDate'</span><span class="p">])</span>
@@ -7652,7 +7663,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">revenue_by_period</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s1">'month'</span><span class="p">)</span>
@@ -7705,7 +7716,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">revenue_by_period</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s1">'season'</span><span class="p">)</span>
@@ -7736,7 +7747,7 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ul>
 <li>Total revenue remains stable throughout Winter, Spring and Summer 2010, with each season just below £2M.</li>
-<li>Fall gains £1.3M in average revenue compared to the other seasons in 2010, suggesting year-end seasonality.</li>
+<li>Fall gains £1.3M in total revenue compared to the other seasons in 2010, suggesting year-end seasonality.</li>
 </ul>
 </div>
 </div>
@@ -7757,7 +7768,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">aov</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>\
@@ -7772,21 +7783,21 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
 </style>
-<table id="T_99a3b">
+<table id="T_3230f">
 <thead>
 <tr>
 <th class="blank level0"> </th>
-<th class="col_heading level0 col0" id="T_99a3b_level0_col0">AOV</th>
+<th class="col_heading level0 col0" id="T_3230f_level0_col0">AOV</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th class="row_heading level0 row0" id="T_99a3b_level0_row0">0</th>
-<td class="data row0 col0" id="T_99a3b_row0_col0">£411.27</td>
+<th class="row_heading level0 row0" id="T_3230f_level0_row0">0</th>
+<td class="data row0 col0" id="T_3230f_row0_col0">£411.27</td>
 </tr>
 </tbody>
 </table>
@@ -7799,7 +7810,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">aov</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="s1">'month'</span><span class="p">)</span>
@@ -7862,7 +7873,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">repeat_customer_revenue</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
@@ -7913,7 +7924,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">customer_concentration</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
@@ -7983,7 +7994,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">product_concentration</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -8014,7 +8025,7 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ul>
 <li>The highest grossing product is responsible for 1.7% of all revenue.</li>
-<li>7.9% of all revenue is generated by the top 10 customers (≈0.24% of clients), suggesting low concentration.</li>
+<li>7.9% of all revenue is generated by the top 10 products (≈0.24% of products), suggesting low concentration.</li>
 </ul>
 </div>
 </div>
@@ -8024,7 +8035,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">product_concentration</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>\
@@ -8039,101 +8050,101 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
 </style>
-<table id="T_fe4bf">
+<table id="T_7cb11">
 <thead>
 <tr>
 <th class="blank level0"> </th>
-<th class="col_heading level0 col0" id="T_fe4bf_level0_col0">StockCode</th>
-<th class="col_heading level0 col1" id="T_fe4bf_level0_col1">Description</th>
-<th class="col_heading level0 col2" id="T_fe4bf_level0_col2">Revenue</th>
-<th class="col_heading level0 col3" id="T_fe4bf_level0_col3">Percentage</th>
-<th class="col_heading level0 col4" id="T_fe4bf_level0_col4">Quantity</th>
+<th class="col_heading level0 col0" id="T_7cb11_level0_col0">StockCode</th>
+<th class="col_heading level0 col1" id="T_7cb11_level0_col1">Description</th>
+<th class="col_heading level0 col2" id="T_7cb11_level0_col2">Revenue</th>
+<th class="col_heading level0 col3" id="T_7cb11_level0_col3">Percentage</th>
+<th class="col_heading level0 col4" id="T_7cb11_level0_col4">Quantity</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th class="row_heading level0 row0" id="T_fe4bf_level0_row0">0</th>
-<td class="data row0 col0" id="T_fe4bf_row0_col0">22423</td>
-<td class="data row0 col1" id="T_fe4bf_row0_col1">REGENCY CAKESTAND 3 TIER</td>
-<td class="data row0 col2" id="T_fe4bf_row0_col2">£166,215</td>
-<td class="data row0 col3" id="T_fe4bf_row0_col3">1.7%</td>
-<td class="data row0 col4" id="T_fe4bf_row0_col4">13395</td>
+<th class="row_heading level0 row0" id="T_7cb11_level0_row0">0</th>
+<td class="data row0 col0" id="T_7cb11_row0_col0">22423</td>
+<td class="data row0 col1" id="T_7cb11_row0_col1">REGENCY CAKESTAND 3 TIER</td>
+<td class="data row0 col2" id="T_7cb11_row0_col2">£166,215</td>
+<td class="data row0 col3" id="T_7cb11_row0_col3">1.7%</td>
+<td class="data row0 col4" id="T_7cb11_row0_col4">13395</td>
 </tr>
 <tr>
-<th class="row_heading level0 row1" id="T_fe4bf_level0_row1">1</th>
-<td class="data row1 col0" id="T_fe4bf_row1_col0">85123A</td>
-<td class="data row1 col1" id="T_fe4bf_row1_col1">WHITE HANGING HEART T-LIGHT HOLDER</td>
-<td class="data row1 col2" id="T_fe4bf_row1_col2">£158,027</td>
-<td class="data row1 col3" id="T_fe4bf_row1_col3">1.6%</td>
-<td class="data row1 col4" id="T_fe4bf_row1_col4">58296</td>
+<th class="row_heading level0 row1" id="T_7cb11_level0_row1">1</th>
+<td class="data row1 col0" id="T_7cb11_row1_col0">85123A</td>
+<td class="data row1 col1" id="T_7cb11_row1_col1">WHITE HANGING HEART T-LIGHT HOLDER</td>
+<td class="data row1 col2" id="T_7cb11_row1_col2">£158,027</td>
+<td class="data row1 col3" id="T_7cb11_row1_col3">1.6%</td>
+<td class="data row1 col4" id="T_7cb11_row1_col4">58296</td>
 </tr>
 <tr>
-<th class="row_heading level0 row2" id="T_fe4bf_level0_row2">2</th>
-<td class="data row2 col0" id="T_fe4bf_row2_col0">85099B</td>
-<td class="data row2 col1" id="T_fe4bf_row2_col1">JUMBO BAG RED WHITE SPOTTY </td>
-<td class="data row2 col2" id="T_fe4bf_row2_col2">£86,391</td>
-<td class="data row2 col3" id="T_fe4bf_row2_col3">0.9%</td>
-<td class="data row2 col4" id="T_fe4bf_row2_col4">48478</td>
+<th class="row_heading level0 row2" id="T_7cb11_level0_row2">2</th>
+<td class="data row2 col0" id="T_7cb11_row2_col0">85099B</td>
+<td class="data row2 col1" id="T_7cb11_row2_col1">JUMBO BAG RED WHITE SPOTTY </td>
+<td class="data row2 col2" id="T_7cb11_row2_col2">£86,391</td>
+<td class="data row2 col3" id="T_7cb11_row2_col3">0.9%</td>
+<td class="data row2 col4" id="T_7cb11_row2_col4">48478</td>
 </tr>
 <tr>
-<th class="row_heading level0 row3" id="T_fe4bf_level0_row3">3</th>
-<td class="data row3 col0" id="T_fe4bf_row3_col0">84879</td>
-<td class="data row3 col1" id="T_fe4bf_row3_col1">ASSORTED COLOUR BIRD ORNAMENT</td>
-<td class="data row3 col2" id="T_fe4bf_row3_col2">£72,361</td>
-<td class="data row3 col3" id="T_fe4bf_row3_col3">0.8%</td>
-<td class="data row3 col4" id="T_fe4bf_row3_col4">44915</td>
+<th class="row_heading level0 row3" id="T_7cb11_level0_row3">3</th>
+<td class="data row3 col0" id="T_7cb11_row3_col0">84879</td>
+<td class="data row3 col1" id="T_7cb11_row3_col1">ASSORTED COLOUR BIRD ORNAMENT</td>
+<td class="data row3 col2" id="T_7cb11_row3_col2">£72,361</td>
+<td class="data row3 col3" id="T_7cb11_row3_col3">0.8%</td>
+<td class="data row3 col4" id="T_7cb11_row3_col4">44915</td>
 </tr>
 <tr>
-<th class="row_heading level0 row4" id="T_fe4bf_level0_row4">4</th>
-<td class="data row4 col0" id="T_fe4bf_row4_col0">22086</td>
-<td class="data row4 col1" id="T_fe4bf_row4_col1">PAPER CHAIN KIT 50'S CHRISTMAS </td>
-<td class="data row4 col2" id="T_fe4bf_row4_col2">£58,012</td>
-<td class="data row4 col3" id="T_fe4bf_row4_col3">0.6%</td>
-<td class="data row4 col4" id="T_fe4bf_row4_col4">17166</td>
+<th class="row_heading level0 row4" id="T_7cb11_level0_row4">4</th>
+<td class="data row4 col0" id="T_7cb11_row4_col0">22086</td>
+<td class="data row4 col1" id="T_7cb11_row4_col1">PAPER CHAIN KIT 50'S CHRISTMAS </td>
+<td class="data row4 col2" id="T_7cb11_row4_col2">£58,012</td>
+<td class="data row4 col3" id="T_7cb11_row4_col3">0.6%</td>
+<td class="data row4 col4" id="T_7cb11_row4_col4">17166</td>
 </tr>
 <tr>
-<th class="row_heading level0 row5" id="T_fe4bf_level0_row5">5</th>
-<td class="data row5 col0" id="T_fe4bf_row5_col0">84347</td>
-<td class="data row5 col1" id="T_fe4bf_row5_col1">ROTATING SILVER ANGELS T-LIGHT HLDR</td>
-<td class="data row5 col2" id="T_fe4bf_row5_col2">£46,386</td>
-<td class="data row5 col3" id="T_fe4bf_row5_col3">0.5%</td>
-<td class="data row5 col4" id="T_fe4bf_row5_col4">22422</td>
+<th class="row_heading level0 row5" id="T_7cb11_level0_row5">5</th>
+<td class="data row5 col0" id="T_7cb11_row5_col0">84347</td>
+<td class="data row5 col1" id="T_7cb11_row5_col1">ROTATING SILVER ANGELS T-LIGHT HLDR</td>
+<td class="data row5 col2" id="T_7cb11_row5_col2">£46,386</td>
+<td class="data row5 col3" id="T_7cb11_row5_col3">0.5%</td>
+<td class="data row5 col4" id="T_7cb11_row5_col4">22422</td>
 </tr>
 <tr>
-<th class="row_heading level0 row6" id="T_fe4bf_level0_row6">6</th>
-<td class="data row6 col0" id="T_fe4bf_row6_col0">47566</td>
-<td class="data row6 col1" id="T_fe4bf_row6_col1">PARTY BUNTING</td>
-<td class="data row6 col2" id="T_fe4bf_row6_col2">£45,935</td>
-<td class="data row6 col3" id="T_fe4bf_row6_col3">0.5%</td>
-<td class="data row6 col4" id="T_fe4bf_row6_col4">9277</td>
+<th class="row_heading level0 row6" id="T_7cb11_level0_row6">6</th>
+<td class="data row6 col0" id="T_7cb11_row6_col0">47566</td>
+<td class="data row6 col1" id="T_7cb11_row6_col1">PARTY BUNTING</td>
+<td class="data row6 col2" id="T_7cb11_row6_col2">£45,935</td>
+<td class="data row6 col3" id="T_7cb11_row6_col3">0.5%</td>
+<td class="data row6 col4" id="T_7cb11_row6_col4">9277</td>
 </tr>
 <tr>
-<th class="row_heading level0 row7" id="T_fe4bf_level0_row7">7</th>
-<td class="data row7 col0" id="T_fe4bf_row7_col0">21843</td>
-<td class="data row7 col1" id="T_fe4bf_row7_col1">RETRO SPOT CAKE STAND</td>
-<td class="data row7 col2" id="T_fe4bf_row7_col2">£44,773</td>
-<td class="data row7 col3" id="T_fe4bf_row7_col3">0.5%</td>
-<td class="data row7 col4" id="T_fe4bf_row7_col4">4233</td>
+<th class="row_heading level0 row7" id="T_7cb11_level0_row7">7</th>
+<td class="data row7 col0" id="T_7cb11_row7_col0">21843</td>
+<td class="data row7 col1" id="T_7cb11_row7_col1">RETRO SPOT CAKE STAND</td>
+<td class="data row7 col2" id="T_7cb11_row7_col2">£44,773</td>
+<td class="data row7 col3" id="T_7cb11_row7_col3">0.5%</td>
+<td class="data row7 col4" id="T_7cb11_row7_col4">4233</td>
 </tr>
 <tr>
-<th class="row_heading level0 row8" id="T_fe4bf_level0_row8">8</th>
-<td class="data row8 col0" id="T_fe4bf_row8_col0">48138</td>
-<td class="data row8 col1" id="T_fe4bf_row8_col1">DOOR MAT UNION FLAG</td>
-<td class="data row8 col2" id="T_fe4bf_row8_col2">£42,163</td>
-<td class="data row8 col3" id="T_fe4bf_row8_col3">0.4%</td>
-<td class="data row8 col4" id="T_fe4bf_row8_col4">6415</td>
+<th class="row_heading level0 row8" id="T_7cb11_level0_row8">8</th>
+<td class="data row8 col0" id="T_7cb11_row8_col0">48138</td>
+<td class="data row8 col1" id="T_7cb11_row8_col1">DOOR MAT UNION FLAG</td>
+<td class="data row8 col2" id="T_7cb11_row8_col2">£42,163</td>
+<td class="data row8 col3" id="T_7cb11_row8_col3">0.4%</td>
+<td class="data row8 col4" id="T_7cb11_row8_col4">6415</td>
 </tr>
 <tr>
-<th class="row_heading level0 row9" id="T_fe4bf_level0_row9">9</th>
-<td class="data row9 col0" id="T_fe4bf_row9_col0">20685</td>
-<td class="data row9 col1" id="T_fe4bf_row9_col1">RED SPOTTY COIR DOORMAT</td>
-<td class="data row9 col2" id="T_fe4bf_row9_col2">£39,822</td>
-<td class="data row9 col3" id="T_fe4bf_row9_col3">0.4%</td>
-<td class="data row9 col4" id="T_fe4bf_row9_col4">5888</td>
+<th class="row_heading level0 row9" id="T_7cb11_level0_row9">9</th>
+<td class="data row9 col0" id="T_7cb11_row9_col0">20685</td>
+<td class="data row9 col1" id="T_7cb11_row9_col1">RED SPOTTY COIR DOORMAT</td>
+<td class="data row9 col2" id="T_7cb11_row9_col2">£39,822</td>
+<td class="data row9 col3" id="T_7cb11_row9_col3">0.4%</td>
+<td class="data row9 col4" id="T_7cb11_row9_col4">5888</td>
 </tr>
 </tbody>
 </table>
@@ -8157,7 +8168,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">return_percentage</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="si">:</span><span class="s1">.2%</span><span class="si">}</span><span class="s1">'</span>
@@ -8171,7 +8182,7 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[18]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>'5.75%'</pre>
 </div>
@@ -8207,7 +8218,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">return_rates</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -8248,7 +8259,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">return_rates</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>\
@@ -8263,101 +8274,101 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[20]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
 </style>
-<table id="T_fed1e">
+<table id="T_6a3e6">
 <thead>
 <tr>
 <th class="blank level0"> </th>
-<th class="col_heading level0 col0" id="T_fed1e_level0_col0">StockCode</th>
-<th class="col_heading level0 col1" id="T_fed1e_level0_col1">Returns</th>
-<th class="col_heading level0 col2" id="T_fed1e_level0_col2">ItemsSold</th>
-<th class="col_heading level0 col3" id="T_fed1e_level0_col3">ReturnRate</th>
-<th class="col_heading level0 col4" id="T_fed1e_level0_col4">Description</th>
+<th class="col_heading level0 col0" id="T_6a3e6_level0_col0">StockCode</th>
+<th class="col_heading level0 col1" id="T_6a3e6_level0_col1">Returns</th>
+<th class="col_heading level0 col2" id="T_6a3e6_level0_col2">ItemsSold</th>
+<th class="col_heading level0 col3" id="T_6a3e6_level0_col3">ReturnRate</th>
+<th class="col_heading level0 col4" id="T_6a3e6_level0_col4">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th class="row_heading level0 row0" id="T_fed1e_level0_row0">0</th>
-<td class="data row0 col0" id="T_fed1e_row0_col0">22638</td>
-<td class="data row0 col1" id="T_fed1e_row0_col1">2,560</td>
-<td class="data row0 col2" id="T_fed1e_row0_col2">2675</td>
-<td class="data row0 col3" id="T_fed1e_row0_col3">95.7%</td>
-<td class="data row0 col4" id="T_fed1e_row0_col4">SET OF 4 NAPKIN CHARMS CROWNS </td>
+<th class="row_heading level0 row0" id="T_6a3e6_level0_row0">0</th>
+<td class="data row0 col0" id="T_6a3e6_row0_col0">22638</td>
+<td class="data row0 col1" id="T_6a3e6_row0_col1">2,560</td>
+<td class="data row0 col2" id="T_6a3e6_row0_col2">2675</td>
+<td class="data row0 col3" id="T_6a3e6_row0_col3">95.7%</td>
+<td class="data row0 col4" id="T_6a3e6_row0_col4">SET OF 4 NAPKIN CHARMS CROWNS </td>
 </tr>
 <tr>
-<th class="row_heading level0 row1" id="T_fed1e_level0_row1">1</th>
-<td class="data row1 col0" id="T_fed1e_row1_col0">22640</td>
-<td class="data row1 col1" id="T_fed1e_row1_col1">2,560</td>
-<td class="data row1 col2" id="T_fed1e_row1_col2">2689</td>
-<td class="data row1 col3" id="T_fed1e_row1_col3">95.2%</td>
-<td class="data row1 col4" id="T_fed1e_row1_col4">SET OF 4 NAPKIN CHARMS 3 KEYS </td>
+<th class="row_heading level0 row1" id="T_6a3e6_level0_row1">1</th>
+<td class="data row1 col0" id="T_6a3e6_row1_col0">22640</td>
+<td class="data row1 col1" id="T_6a3e6_row1_col1">2,560</td>
+<td class="data row1 col2" id="T_6a3e6_row1_col2">2689</td>
+<td class="data row1 col3" id="T_6a3e6_row1_col3">95.2%</td>
+<td class="data row1 col4" id="T_6a3e6_row1_col4">SET OF 4 NAPKIN CHARMS 3 KEYS </td>
 </tr>
 <tr>
-<th class="row_heading level0 row2" id="T_fed1e_level0_row2">2</th>
-<td class="data row2 col0" id="T_fed1e_row2_col0">22641</td>
-<td class="data row2 col1" id="T_fed1e_row2_col1">2,560</td>
-<td class="data row2 col2" id="T_fed1e_row2_col2">2724</td>
-<td class="data row2 col3" id="T_fed1e_row2_col3">94.0%</td>
-<td class="data row2 col4" id="T_fed1e_row2_col4">SET OF 4 NAPKIN CHARMS INSTRUMENT</td>
+<th class="row_heading level0 row2" id="T_6a3e6_level0_row2">2</th>
+<td class="data row2 col0" id="T_6a3e6_row2_col0">22641</td>
+<td class="data row2 col1" id="T_6a3e6_row2_col1">2,560</td>
+<td class="data row2 col2" id="T_6a3e6_row2_col2">2724</td>
+<td class="data row2 col3" id="T_6a3e6_row2_col3">94.0%</td>
+<td class="data row2 col4" id="T_6a3e6_row2_col4">SET OF 4 NAPKIN CHARMS INSTRUMENT</td>
 </tr>
 <tr>
-<th class="row_heading level0 row3" id="T_fed1e_level0_row3">3</th>
-<td class="data row3 col0" id="T_fed1e_row3_col0">22643</td>
-<td class="data row3 col1" id="T_fed1e_row3_col1">2,560</td>
-<td class="data row3 col2" id="T_fed1e_row3_col2">2794</td>
-<td class="data row3 col3" id="T_fed1e_row3_col3">91.6%</td>
-<td class="data row3 col4" id="T_fed1e_row3_col4">SET OF 4 NAPKIN CHARMS LEAVES   </td>
+<th class="row_heading level0 row3" id="T_6a3e6_level0_row3">3</th>
+<td class="data row3 col0" id="T_6a3e6_row3_col0">22643</td>
+<td class="data row3 col1" id="T_6a3e6_row3_col1">2,560</td>
+<td class="data row3 col2" id="T_6a3e6_row3_col2">2794</td>
+<td class="data row3 col3" id="T_6a3e6_row3_col3">91.6%</td>
+<td class="data row3 col4" id="T_6a3e6_row3_col4">SET OF 4 NAPKIN CHARMS LEAVES   </td>
 </tr>
 <tr>
-<th class="row_heading level0 row4" id="T_fed1e_level0_row4">4</th>
-<td class="data row4 col0" id="T_fed1e_row4_col0">22756</td>
-<td class="data row4 col1" id="T_fed1e_row4_col1">5,000</td>
-<td class="data row4 col2" id="T_fed1e_row4_col2">5618</td>
-<td class="data row4 col3" id="T_fed1e_row4_col3">89.0%</td>
-<td class="data row4 col4" id="T_fed1e_row4_col4">LARGE YELLOW BABUSHKA NOTEBOOK </td>
+<th class="row_heading level0 row4" id="T_6a3e6_level0_row4">4</th>
+<td class="data row4 col0" id="T_6a3e6_row4_col0">22756</td>
+<td class="data row4 col1" id="T_6a3e6_row4_col1">5,000</td>
+<td class="data row4 col2" id="T_6a3e6_row4_col2">5618</td>
+<td class="data row4 col3" id="T_6a3e6_row4_col3">89.0%</td>
+<td class="data row4 col4" id="T_6a3e6_row4_col4">LARGE YELLOW BABUSHKA NOTEBOOK </td>
 </tr>
 <tr>
-<th class="row_heading level0 row5" id="T_fed1e_level0_row5">5</th>
-<td class="data row5 col0" id="T_fed1e_row5_col0">85078</td>
-<td class="data row5 col1" id="T_fed1e_row5_col1">2,300</td>
-<td class="data row5 col2" id="T_fed1e_row5_col2">2652</td>
-<td class="data row5 col3" id="T_fed1e_row5_col3">86.7%</td>
-<td class="data row5 col4" id="T_fed1e_row5_col4">SCANDINAVIAN 3 HEARTS NAPKIN RING</td>
+<th class="row_heading level0 row5" id="T_6a3e6_level0_row5">5</th>
+<td class="data row5 col0" id="T_6a3e6_row5_col0">85078</td>
+<td class="data row5 col1" id="T_6a3e6_row5_col1">2,300</td>
+<td class="data row5 col2" id="T_6a3e6_row5_col2">2652</td>
+<td class="data row5 col3" id="T_6a3e6_row5_col3">86.7%</td>
+<td class="data row5 col4" id="T_6a3e6_row5_col4">SCANDINAVIAN 3 HEARTS NAPKIN RING</td>
 </tr>
 <tr>
-<th class="row_heading level0 row6" id="T_fed1e_level0_row6">6</th>
-<td class="data row6 col0" id="T_fed1e_row6_col0">90162A</td>
-<td class="data row6 col1" id="T_fed1e_row6_col1">145</td>
-<td class="data row6 col2" id="T_fed1e_row6_col2">180</td>
-<td class="data row6 col3" id="T_fed1e_row6_col3">80.6%</td>
-<td class="data row6 col4" id="T_fed1e_row6_col4">ANT SILVER TURQUOISE BOUDICCA RING</td>
+<th class="row_heading level0 row6" id="T_6a3e6_level0_row6">6</th>
+<td class="data row6 col0" id="T_6a3e6_row6_col0">90162A</td>
+<td class="data row6 col1" id="T_6a3e6_row6_col1">145</td>
+<td class="data row6 col2" id="T_6a3e6_row6_col2">180</td>
+<td class="data row6 col3" id="T_6a3e6_row6_col3">80.6%</td>
+<td class="data row6 col4" id="T_6a3e6_row6_col4">ANT SILVER TURQUOISE BOUDICCA RING</td>
 </tr>
 <tr>
-<th class="row_heading level0 row7" id="T_fed1e_level0_row7">7</th>
-<td class="data row7 col0" id="T_fed1e_row7_col0">22758</td>
-<td class="data row7 col1" id="T_fed1e_row7_col1">5,000</td>
-<td class="data row7 col2" id="T_fed1e_row7_col2">6279</td>
-<td class="data row7 col3" id="T_fed1e_row7_col3">79.6%</td>
-<td class="data row7 col4" id="T_fed1e_row7_col4">LARGE PURPLE BABUSHKA NOTEBOOK  </td>
+<th class="row_heading level0 row7" id="T_6a3e6_level0_row7">7</th>
+<td class="data row7 col0" id="T_6a3e6_row7_col0">22758</td>
+<td class="data row7 col1" id="T_6a3e6_row7_col1">5,000</td>
+<td class="data row7 col2" id="T_6a3e6_row7_col2">6279</td>
+<td class="data row7 col3" id="T_6a3e6_row7_col3">79.6%</td>
+<td class="data row7 col4" id="T_6a3e6_row7_col4">LARGE PURPLE BABUSHKA NOTEBOOK  </td>
 </tr>
 <tr>
-<th class="row_heading level0 row8" id="T_fed1e_level0_row8">8</th>
-<td class="data row8 col0" id="T_fed1e_row8_col0">22753</td>
-<td class="data row8 col1" id="T_fed1e_row8_col1">5,000</td>
-<td class="data row8 col2" id="T_fed1e_row8_col2">6371</td>
-<td class="data row8 col3" id="T_fed1e_row8_col3">78.5%</td>
-<td class="data row8 col4" id="T_fed1e_row8_col4">SMALL YELLOW BABUSHKA NOTEBOOK </td>
+<th class="row_heading level0 row8" id="T_6a3e6_level0_row8">8</th>
+<td class="data row8 col0" id="T_6a3e6_row8_col0">22753</td>
+<td class="data row8 col1" id="T_6a3e6_row8_col1">5,000</td>
+<td class="data row8 col2" id="T_6a3e6_row8_col2">6371</td>
+<td class="data row8 col3" id="T_6a3e6_row8_col3">78.5%</td>
+<td class="data row8 col4" id="T_6a3e6_row8_col4">SMALL YELLOW BABUSHKA NOTEBOOK </td>
 </tr>
 <tr>
-<th class="row_heading level0 row9" id="T_fed1e_level0_row9">9</th>
-<td class="data row9 col0" id="T_fed1e_row9_col0">22642</td>
-<td class="data row9 col1" id="T_fed1e_row9_col1">2,560</td>
-<td class="data row9 col2" id="T_fed1e_row9_col2">3291</td>
-<td class="data row9 col3" id="T_fed1e_row9_col3">77.8%</td>
-<td class="data row9 col4" id="T_fed1e_row9_col4">SET OF 4 NAPKIN CHARMS STARS   </td>
+<th class="row_heading level0 row9" id="T_6a3e6_level0_row9">9</th>
+<td class="data row9 col0" id="T_6a3e6_row9_col0">22642</td>
+<td class="data row9 col1" id="T_6a3e6_row9_col1">2,560</td>
+<td class="data row9 col2" id="T_6a3e6_row9_col2">3291</td>
+<td class="data row9 col3" id="T_6a3e6_row9_col3">77.8%</td>
+<td class="data row9 col4" id="T_6a3e6_row9_col4">SET OF 4 NAPKIN CHARMS STARS   </td>
 </tr>
 </tbody>
 </table>
@@ -8392,7 +8403,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">revenue_by_country</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -8433,7 +8444,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">revenue_by_country</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>\
@@ -8448,79 +8459,79 @@ a.anchor-link {
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[22]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
 </style>
-<table id="T_c263c">
+<table id="T_067ac">
 <thead>
 <tr>
 <th class="blank level0"> </th>
-<th class="col_heading level0 col0" id="T_c263c_level0_col0">Country</th>
-<th class="col_heading level0 col1" id="T_c263c_level0_col1">Revenue</th>
-<th class="col_heading level0 col2" id="T_c263c_level0_col2">Percentage</th>
+<th class="col_heading level0 col0" id="T_067ac_level0_col0">Country</th>
+<th class="col_heading level0 col1" id="T_067ac_level0_col1">Revenue</th>
+<th class="col_heading level0 col2" id="T_067ac_level0_col2">Percentage</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th class="row_heading level0 row0" id="T_c263c_level0_row0">0</th>
-<td class="data row0 col0" id="T_c263c_row0_col0">United Kingdom</td>
-<td class="data row0 col1" id="T_c263c_row0_col1">£8,256,734</td>
-<td class="data row0 col2" id="T_c263c_row0_col2">85.9%</td>
+<th class="row_heading level0 row0" id="T_067ac_level0_row0">0</th>
+<td class="data row0 col0" id="T_067ac_row0_col0">United Kingdom</td>
+<td class="data row0 col1" id="T_067ac_row0_col1">£8,256,734</td>
+<td class="data row0 col2" id="T_067ac_row0_col2">85.9%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row1" id="T_c263c_level0_row1">1</th>
-<td class="data row1 col0" id="T_c263c_row1_col0">EIRE</td>
-<td class="data row1 col1" id="T_c263c_row1_col1">£357,769</td>
-<td class="data row1 col2" id="T_c263c_row1_col2">3.7%</td>
+<th class="row_heading level0 row1" id="T_067ac_level0_row1">1</th>
+<td class="data row1 col0" id="T_067ac_row1_col0">EIRE</td>
+<td class="data row1 col1" id="T_067ac_row1_col1">£357,769</td>
+<td class="data row1 col2" id="T_067ac_row1_col2">3.7%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row2" id="T_c263c_level0_row2">2</th>
-<td class="data row2 col0" id="T_c263c_row2_col0">Netherlands</td>
-<td class="data row2 col1" id="T_c263c_row2_col1">£266,188</td>
-<td class="data row2 col2" id="T_c263c_row2_col2">2.8%</td>
+<th class="row_heading level0 row2" id="T_067ac_level0_row2">2</th>
+<td class="data row2 col0" id="T_067ac_row2_col0">Netherlands</td>
+<td class="data row2 col1" id="T_067ac_row2_col1">£266,188</td>
+<td class="data row2 col2" id="T_067ac_row2_col2">2.8%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row3" id="T_c263c_level0_row3">3</th>
-<td class="data row3 col0" id="T_c263c_row3_col0">Germany</td>
-<td class="data row3 col1" id="T_c263c_row3_col1">£183,370</td>
-<td class="data row3 col2" id="T_c263c_row3_col2">1.9%</td>
+<th class="row_heading level0 row3" id="T_067ac_level0_row3">3</th>
+<td class="data row3 col0" id="T_067ac_row3_col0">Germany</td>
+<td class="data row3 col1" id="T_067ac_row3_col1">£183,370</td>
+<td class="data row3 col2" id="T_067ac_row3_col2">1.9%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row4" id="T_c263c_level0_row4">4</th>
-<td class="data row4 col0" id="T_c263c_row4_col0">France</td>
-<td class="data row4 col1" id="T_c263c_row4_col1">£132,366</td>
-<td class="data row4 col2" id="T_c263c_row4_col2">1.4%</td>
+<th class="row_heading level0 row4" id="T_067ac_level0_row4">4</th>
+<td class="data row4 col0" id="T_067ac_row4_col0">France</td>
+<td class="data row4 col1" id="T_067ac_row4_col1">£132,366</td>
+<td class="data row4 col2" id="T_067ac_row4_col2">1.4%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row5" id="T_c263c_level0_row5">5</th>
-<td class="data row5 col0" id="T_c263c_row5_col0">Denmark</td>
-<td class="data row5 col1" id="T_c263c_row5_col1">£50,349</td>
-<td class="data row5 col2" id="T_c263c_row5_col2">0.5%</td>
+<th class="row_heading level0 row5" id="T_067ac_level0_row5">5</th>
+<td class="data row5 col0" id="T_067ac_row5_col0">Denmark</td>
+<td class="data row5 col1" id="T_067ac_row5_col1">£50,349</td>
+<td class="data row5 col2" id="T_067ac_row5_col2">0.5%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row6" id="T_c263c_level0_row6">6</th>
-<td class="data row6 col0" id="T_c263c_row6_col0">Sweden</td>
-<td class="data row6 col1" id="T_c263c_row6_col1">£49,514</td>
-<td class="data row6 col2" id="T_c263c_row6_col2">0.5%</td>
+<th class="row_heading level0 row6" id="T_067ac_level0_row6">6</th>
+<td class="data row6 col0" id="T_067ac_row6_col0">Sweden</td>
+<td class="data row6 col1" id="T_067ac_row6_col1">£49,514</td>
+<td class="data row6 col2" id="T_067ac_row6_col2">0.5%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row7" id="T_c263c_level0_row7">7</th>
-<td class="data row7 col0" id="T_c263c_row7_col0">Spain</td>
-<td class="data row7 col1" id="T_c263c_row7_col1">£42,888</td>
-<td class="data row7 col2" id="T_c263c_row7_col2">0.4%</td>
+<th class="row_heading level0 row7" id="T_067ac_level0_row7">7</th>
+<td class="data row7 col0" id="T_067ac_row7_col0">Spain</td>
+<td class="data row7 col1" id="T_067ac_row7_col1">£42,888</td>
+<td class="data row7 col2" id="T_067ac_row7_col2">0.4%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row8" id="T_c263c_level0_row8">8</th>
-<td class="data row8 col0" id="T_c263c_row8_col0">Switzerland</td>
-<td class="data row8 col1" id="T_c263c_row8_col1">£41,182</td>
-<td class="data row8 col2" id="T_c263c_row8_col2">0.4%</td>
+<th class="row_heading level0 row8" id="T_067ac_level0_row8">8</th>
+<td class="data row8 col0" id="T_067ac_row8_col0">Switzerland</td>
+<td class="data row8 col1" id="T_067ac_row8_col1">£41,182</td>
+<td class="data row8 col2" id="T_067ac_row8_col2">0.4%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row9" id="T_c263c_level0_row9">9</th>
-<td class="data row9 col0" id="T_c263c_row9_col0">Australia</td>
-<td class="data row9 col1" id="T_c263c_row9_col1">£30,313</td>
-<td class="data row9 col2" id="T_c263c_row9_col2">0.3%</td>
+<th class="row_heading level0 row9" id="T_067ac_level0_row9">9</th>
+<td class="data row9 col0" id="T_067ac_row9_col0">Australia</td>
+<td class="data row9 col1" id="T_067ac_row9_col1">£30,313</td>
+<td class="data row9 col2" id="T_067ac_row9_col2">0.3%</td>
 </tr>
 </tbody>
 </table>
@@ -8544,7 +8555,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">market_growth</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -8594,7 +8605,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">market_growth</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>\
@@ -8616,17 +8627,17 @@ a.anchor-link {
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[24]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
 </style>
-<table id="T_14d33">
+<table id="T_2ebcd">
 <thead>
 <tr>
 <th class="blank level0"> </th>
-<th class="col_heading level0 col0" id="T_14d33_level0_col0">first_revenue</th>
-<th class="col_heading level0 col1" id="T_14d33_level0_col1">last_revenue</th>
-<th class="col_heading level0 col2" id="T_14d33_level0_col2">Total_Growth</th>
+<th class="col_heading level0 col0" id="T_2ebcd_level0_col0">first_revenue</th>
+<th class="col_heading level0 col1" id="T_2ebcd_level0_col1">last_revenue</th>
+<th class="col_heading level0 col2" id="T_2ebcd_level0_col2">Total_Growth</th>
 </tr>
 <tr>
 <th class="index_name level0">Country</th>
@@ -8637,52 +8648,52 @@ a.anchor-link {
 </thead>
 <tbody>
 <tr>
-<th class="row_heading level0 row0" id="T_14d33_level0_row0">Belgium</th>
-<td class="data row0 col0" id="T_14d33_row0_col0">£288</td>
-<td class="data row0 col1" id="T_14d33_row0_col1">£4,653</td>
-<td class="data row0 col2" id="T_14d33_row0_col2">1,517.9%</td>
+<th class="row_heading level0 row0" id="T_2ebcd_level0_row0">Belgium</th>
+<td class="data row0 col0" id="T_2ebcd_row0_col0">£288</td>
+<td class="data row0 col1" id="T_2ebcd_row0_col1">£4,653</td>
+<td class="data row0 col2" id="T_2ebcd_row0_col2">1,517.9%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row1" id="T_14d33_level0_row1">Sweden</th>
-<td class="data row1 col0" id="T_14d33_row1_col0">£285</td>
-<td class="data row1 col1" id="T_14d33_row1_col1">£1,534</td>
-<td class="data row1 col2" id="T_14d33_row1_col2">437.6%</td>
+<th class="row_heading level0 row1" id="T_2ebcd_level0_row1">Sweden</th>
+<td class="data row1 col0" id="T_2ebcd_row1_col0">£285</td>
+<td class="data row1 col1" id="T_2ebcd_row1_col1">£1,534</td>
+<td class="data row1 col2" id="T_2ebcd_row1_col2">437.6%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row2" id="T_14d33_level0_row2">France</th>
-<td class="data row2 col0" id="T_14d33_row2_col0">£5,874</td>
-<td class="data row2 col1" id="T_14d33_row2_col1">£18,211</td>
-<td class="data row2 col2" id="T_14d33_row2_col2">210.0%</td>
+<th class="row_heading level0 row2" id="T_2ebcd_level0_row2">France</th>
+<td class="data row2 col0" id="T_2ebcd_row2_col0">£5,874</td>
+<td class="data row2 col1" id="T_2ebcd_row2_col1">£18,211</td>
+<td class="data row2 col2" id="T_2ebcd_row2_col2">210.0%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row3" id="T_14d33_level0_row3">Germany</th>
-<td class="data row3 col0" id="T_14d33_row3_col0">£9,035</td>
-<td class="data row3 col1" id="T_14d33_row3_col1">£27,709</td>
-<td class="data row3 col2" id="T_14d33_row3_col2">206.7%</td>
+<th class="row_heading level0 row3" id="T_2ebcd_level0_row3">Germany</th>
+<td class="data row3 col0" id="T_2ebcd_row3_col0">£9,035</td>
+<td class="data row3 col1" id="T_2ebcd_row3_col1">£27,709</td>
+<td class="data row3 col2" id="T_2ebcd_row3_col2">206.7%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row4" id="T_14d33_level0_row4">Netherlands</th>
-<td class="data row4 col0" id="T_14d33_row4_col0">£15,046</td>
-<td class="data row4 col1" id="T_14d33_row4_col1">£35,630</td>
-<td class="data row4 col2" id="T_14d33_row4_col2">136.8%</td>
+<th class="row_heading level0 row4" id="T_2ebcd_level0_row4">Netherlands</th>
+<td class="data row4 col0" id="T_2ebcd_row4_col0">£15,046</td>
+<td class="data row4 col1" id="T_2ebcd_row4_col1">£35,630</td>
+<td class="data row4 col2" id="T_2ebcd_row4_col2">136.8%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row5" id="T_14d33_level0_row5">United Kingdom</th>
-<td class="data row5 col0" id="T_14d33_row5_col0">£725,232</td>
-<td class="data row5 col1" id="T_14d33_row5_col1">£1,227,781</td>
-<td class="data row5 col2" id="T_14d33_row5_col2">69.3%</td>
+<th class="row_heading level0 row5" id="T_2ebcd_level0_row5">United Kingdom</th>
+<td class="data row5 col0" id="T_2ebcd_row5_col0">£725,232</td>
+<td class="data row5 col1" id="T_2ebcd_row5_col1">£1,227,781</td>
+<td class="data row5 col2" id="T_2ebcd_row5_col2">69.3%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row6" id="T_14d33_level0_row6">EIRE</th>
-<td class="data row6 col0" id="T_14d33_row6_col0">£18,946</td>
-<td class="data row6 col1" id="T_14d33_row6_col1">£30,221</td>
-<td class="data row6 col2" id="T_14d33_row6_col2">59.5%</td>
+<th class="row_heading level0 row6" id="T_2ebcd_level0_row6">EIRE</th>
+<td class="data row6 col0" id="T_2ebcd_row6_col0">£18,946</td>
+<td class="data row6 col1" id="T_2ebcd_row6_col1">£30,221</td>
+<td class="data row6 col2" id="T_2ebcd_row6_col2">59.5%</td>
 </tr>
 <tr>
-<th class="row_heading level0 row7" id="T_14d33_level0_row7">Spain</th>
-<td class="data row7 col0" id="T_14d33_row7_col0">£7,754</td>
-<td class="data row7 col1" id="T_14d33_row7_col1">£5,902</td>
-<td class="data row7 col2" id="T_14d33_row7_col2">-23.9%</td>
+<th class="row_heading level0 row7" id="T_2ebcd_level0_row7">Spain</th>
+<td class="data row7 col0" id="T_2ebcd_row7_col0">£7,754</td>
+<td class="data row7 col1" id="T_2ebcd_row7_col1">£5,902</td>
+<td class="data row7 col2" id="T_2ebcd_row7_col2">-23.9%</td>
 </tr>
 </tbody>
 </table>
@@ -8703,6 +8714,17 @@ a.anchor-link {
 <li>Review high-return products. Consider discontinuing SKUs with over 25% return rate, as they account for just 1.6% of all products.</li>
 <li>Focus on emerging markets. Though the majority of revenue is generated in the U.K., nearby markets such as France and Germany show promise.</li>
 </ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4eb1e539">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong><a href="https://gabepoissant.github.io/projects/ecommerce-analysis/">Back to Portfolio</a></strong></p>
 </div>
 </div>
 </div>
