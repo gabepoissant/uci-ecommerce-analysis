@@ -1,6 +1,6 @@
-*.py linguist-detectable
-*.py linguist-documentation=false
+*.ipynb linguist-language=Python
 
-notebooks/* linguist-documentation
-figures/* linguist-documentation
-data/* linguist-documentation
+*.html linguist-vendored
+*.json linguist-vendored
+
+src/*.py linguist-detectable
