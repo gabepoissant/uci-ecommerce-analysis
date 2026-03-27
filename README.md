@@ -59,3 +59,7 @@ Analyzing this dataset required robust data cleaning, missing value imputation, 
 4. Create a venv: `python -m venv venv`
 5. Install dependencies: pip install -r requirements.txt
 6. Run the notebooks in `/notebooks`
+
+---
+
+**[Click here to view the Business Analysis Report](https://gabepoissant.github.io/UCI-ecommerce-analysis/)** 
