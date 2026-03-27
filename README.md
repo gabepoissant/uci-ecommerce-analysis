@@ -2,7 +2,7 @@
 
 ![Top-Performing-Products](/figures/Top_Performing_Products.png)
 
-**[Click here to view the Business Analysis Report](https://gabepoissant.github.io/UCI-ecommerce-analysis/)** 
+[Click here to view the Business Analysis Report](https://gabepoissant.github.io/uci-ecommerce-analysis/) 
 
 ## Project Overview
 
@@ -53,7 +53,7 @@ Analyzing this dataset required robust data cleaning, missing value imputation, 
   - **Tools:** Jupyter Notebooks, Git/GitHub, VS Code
 
 ## How to Run
-1. Clone the repo: git clone https://github.com/gabepoissant/ecommerce-analysis.git
+1. Clone the repo: git clone https://github.com/gabepoissant/uci-ecommerce-analysis.git
 2. Download the dataset here: https://archive.ics.uci.edu/dataset/502/online+retail+ii
 3. Extract the contents into `/data/raw/`.
 4. Create a venv: `python -m venv venv`
@@ -62,4 +62,4 @@ Analyzing this dataset required robust data cleaning, missing value imputation, 
 
 ---
 
-**[Click here to view the Business Analysis Report](https://gabepoissant.github.io/UCI-ecommerce-analysis/)** 
+[Click here to view the Business Analysis Report](https://gabepoissant.github.io/uci-ecommerce-analysis/) 
